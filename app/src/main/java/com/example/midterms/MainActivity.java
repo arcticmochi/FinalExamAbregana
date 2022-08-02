@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements BillDialogFragmen
         btnPipe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                launcher.launch(intent);
+                // TODO launch intent
             }
         });
     }
