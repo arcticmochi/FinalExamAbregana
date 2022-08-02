@@ -38,7 +38,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Date;
 
-// TODO implement LoaderManager.LoaderCallbacks<Cursor>
+// TODO Milestone 3-1: implement LoaderManager.LoaderCallbacks<Cursor>
 public class MainActivity extends AppCompatActivity implements BillDialogFragment.ErrorDialogListener {
     ArrayList<Bill> bills;
     BillsAdapter billsAdapter;
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements BillDialogFragmen
         nightModeListenerMethod();
         btnPipeListenerMethod();
 
-        // TODO use initLoader() here
+        // TODO Milestone 3-3: use initLoader() here
     }
 
     private void btnPipeListenerMethod() {
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements BillDialogFragmen
                     public void onActivityResult(ActivityResult result) {
                         if (result.getResultCode() == RESULT_OK) {
                             Intent outIntent = result.getData();
-                            // TODO handle outIntent containing extras: brand and diameter
+                            // TODO Milestone B-2: handle outIntent containing extras: brand and diameter
                             //  and set text of tvPipe to Brand/Diameter (example: Arad/0.5)
                         }
                     }
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements BillDialogFragmen
         btnPipe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // TODO launch intent
+                launcher.launch(intent);
             }
         });
     }
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements BillDialogFragmen
     @Override
     protected void onResume() {
         super.onResume();
-        // TODO use restartLoader() here
+        // TODO Milestone 3-4: use restartLoader() here
     }
 
     private void initialNightMode() {
@@ -207,8 +207,8 @@ public class MainActivity extends AppCompatActivity implements BillDialogFragmen
                 etPrev.setText(curr + "");
                 etNext.setText("");
 
-                // TODO use Content Resolver here and use Content Values
-                //  to insert all data in columns as defined in Bill.java class
+                // TODO Milestone 2-3: use Content Resolver here and use Content Values
+                //  to insert all data in columns into the database as defined in Bill.java class
             }
         });
     }
@@ -228,7 +228,7 @@ public class MainActivity extends AppCompatActivity implements BillDialogFragmen
         etNext.setText("");
     }
 
-    // TODO implement Cursor Loader inherited methods
+    // TODO Milestone 3-2: implement Cursor Loader inherited methods
     //  Tip: the concept is the same with the Notes activity:
     //   onCreateLoader will initialize the CursorLoader and the
     //   onLoadFinished will collect all data and store them into the bills ArrayList

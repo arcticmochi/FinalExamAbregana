@@ -17,11 +17,11 @@ public class PipeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pipe);
         btnConfirmListenerMethod();
 
-        // TODO get SharedPreference on night mode and change false to variable
+        // TODO Milestone A: get SharedPreference on night mode and change false to variable
         initializeNightMode(false);
     }
 
-    // TODO implement night mode
+    // TODO Milestone A: implement night mode
     private void initializeNightMode(boolean night) {
 
     }
@@ -33,7 +33,7 @@ public class PipeActivity extends AppCompatActivity {
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // TODO use the outIntent and store the chosen brand and the chosen diameter as extras
+                // TODO Milestone B-1: use the outIntent and store the chosen brand and the chosen diameter as extras
                 //  and after which, use setResult with ACTION_OK and the intent as arguments
                 setResult(RESULT_OK, outIntent);
                 finish();

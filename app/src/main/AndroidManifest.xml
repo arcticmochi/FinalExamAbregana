@@ -13,11 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Midterms"
         tools:targetApi="31">
-        <!--   TODO add provider here     -->
+        <!--   TODO: Milestone 2-2: add provider here     -->
         <activity
             android:name=".PipeActivity"
             android:exported="false">
-            <!--    TODO add meta-data here    -->
+            <!--    TODO Milestone D: add meta-data here    -->
         </activity>
         <activity
             android:name=".MainActivity"

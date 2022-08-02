@@ -30,7 +30,7 @@ public class Bill {
         return diff * type.diameter;
     }
 
-    // TODO Milestone 3: Calculate bill.
+    // Milestone 3: Calculate bill.
     public double get_bill() {
         switch (pack) {
             case 1:
